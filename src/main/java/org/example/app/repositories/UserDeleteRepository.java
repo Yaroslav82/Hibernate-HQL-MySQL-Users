@@ -30,7 +30,7 @@ public class UserDeleteRepository {
             user = session.get(User.class, user.getId());
 
             if (user != null) {
-                String hql = "DELETE FROM Contact WHERE id = :id";
+                String hql = "DELETE FROM User WHERE id = :id";
                 MutationQuery query = session.createMutationQuery(hql);
                 query.setParameter("id", user.getId());
                 query.executeUpdate();

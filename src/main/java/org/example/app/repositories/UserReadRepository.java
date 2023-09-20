@@ -15,7 +15,7 @@ public class UserReadRepository {
             Transaction transaction;
 
             transaction = session.beginTransaction();
-            List<User> contacts = session.createQuery("FROM Contact", User.class).list();
+            List<User> contacts = session.createQuery("FROM User", User.class).list();
 
             transaction.commit();
             return contacts;
