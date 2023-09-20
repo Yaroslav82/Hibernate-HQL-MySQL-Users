@@ -25,9 +25,9 @@ CREATE TABLE IF NOT EXISTS users
 );
 
 -- HQL
-INSERT INTO User (user_name, firstName, lastName, email) VALUES (:user_name, :firstName, :lastName, :email)
+INSERT INTO User (userName, firstName, lastName, email) VALUES (:user_name, :firstName, :lastName, :email)
 -- SQL
-INSERT INTO users (user_name, firstName, lastName, email) VALUES (:user_name, :firstName, :lastName, :email))
+INSERT INTO users (userName, firstName, lastName, email) VALUES (:user_name, :firstName, :lastName, :email))
 
 
 -- HQL
