@@ -12,7 +12,7 @@ public class IdChecker {
             user = session.get(User.class, user.getId());
 
             if (user != null) {
-                Query<User> query = session.createQuery("FROM Contact", User.class);
+                Query<User> query = session.createQuery("FROM User", User.class);
                 query.setMaxResults(1);
                 query.getResultList();
             }
