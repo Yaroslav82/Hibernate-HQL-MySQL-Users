@@ -11,7 +11,7 @@ public class OptionChecker {
                 throw new OptionException(Constants.INCORRECT_VALUE_MSG);
             } catch (OptionException e) {
                 System.out.println(e.getMessage());
-
+                AppStarter.startApp();
             }
         }
     }
