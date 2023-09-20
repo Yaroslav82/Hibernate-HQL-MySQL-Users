@@ -10,15 +10,15 @@ import org.hibernate.query.MutationQuery;
 
 public class UserDeleteRepository {
 
-    public String deleteContact(User user) {
+    public String deleteUser(User user) {
         if (IdChecker.isIdExists(user)) {
-            return deleteContactById(user);
+            return deleteUserById(user);
         } else {
             return Constants.ID_NO_EXISTS_MSG;
         }
     }
 
-    private String deleteContactById(User user) {
+    private String deleteUserById(User user) {
 
         Transaction transaction = null;
 
